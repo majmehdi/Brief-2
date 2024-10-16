@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+/* ul{
+    list-style: none;
+} */
+
+a{
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    height: 70px;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar img{
+    width: 130px;
+    margin-left: 100px;
+
+}
+
+#navbar ul a{
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+#navbar ul a:hover{
+    border-bottom: 2px groove #000;
+}
+
+header .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: right; 
+    margin-left: 40%;
+    color: #fff;
+    text-wrap: balance;
+    
+
+}
+
+header{
+    height: 100vh;
+    background : url('./assets/img/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .paragraph{
+    margin-left: 27.1%;
+    
+}
+
+.btn btn-primary{
+    text-decoration: none;
+    color:white;
+}
+
+a{
+    color:white;
+}
