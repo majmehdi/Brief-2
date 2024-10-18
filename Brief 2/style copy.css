@@ -120,20 +120,21 @@ header{
     .EventsDesc{
         display: flex;
     }
-    .box{
+    /* .box{
         display: flex;
         flex-direction: column;
         margin-right: 12px;
-    }
+    } */
     /* .number14{
         margin-top: -40px;
         margin-left: 190px;
     } */
     .grp1{
         margin-top: 12px;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3/1fr);
+        grid-template-rows: repeat(3/auto);
         width: 90%;
-        justify-content: space-between;
     
     }
     
@@ -152,12 +153,10 @@ header{
         height: 100%;
     }
     
-    .Event{
-        width: 90%;
+    .Event {
+        width: 74%;
         margin-bottom: 164px;
-
     }
-
     .jointhebrand{
 
         display: flex;
@@ -248,4 +247,89 @@ header{
         text-align: center;
         padding-top: 1px;
         order: 10; /* Ensure it appears at the very bottom */
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-rows: repeat(4 , auto);
+        margin: 45px 150px ;
+        padding-left: 30px;
+        padding-right: 0px;
+        gap:  25px 10px; 
+    }
+    
+    .gallery-title{
+        grid-column: 1 / 4 ;
+    }
+    
+    .gallery-title h1{
+        color: blue;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .gallery select{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        border: none;
+        border-radius: 30px;
+        background-color:#F2F4FF;
+        padding: 5px 10px;
+    }
+    
+    .concert{
+        grid-column: span 2;
+        filter: drop-shadow(0px 18.9529px 47.3822px rgba(119, 115, 170, 0.1));
+        padding-bottom: 22px;
+    
+    }
+    
+    .concert img{
+        width: 100%;
+    }
+    
+    .event-description{
+        display: flex;
+    }
+    
+    .time{
+        padding: 0 20px;
+    }
+    
+    .time h3:first-child{
+        color: blue;
+        font-size: 12px;
+    }
+    
+    .time h3:last-child{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+    .description h2{
+        font-size: 16px;
+        padding-top: 12px;
+    }
+    
+    .description p{
+        font-size: 12px;
+        margin-top: 10px;
+    
+    }
+    
+    .event-btn{
+        grid-column: span 6;
+        text-align: center;
+    }
+    
+    .event-btn button{
+        padding: 10px 35px;
+        border-radius: 30px;
+        border: 2px solid blue;
+        color: blue;
+        font-weight: 600;
+        background-color: transparent;
     }

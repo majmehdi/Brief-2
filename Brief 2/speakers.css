@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 header{
-    background-image: url(./assets/img/cover1.jpg);
+    background-image: url(./assets/img/istockphoto-1373240838-612x612\ 1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -106,10 +106,11 @@ header{
         margin-left: 190px;
         color: darkblue;
     }
-    /* .image1{
-        margin-top: 100px;
-        margin-left: 190px;
-    } */
+    .image1{
+        /* margin-top: 100px;
+        margin-left: 190px; */
+        size: 60px;
+    }
     
     .txt1{
     
@@ -249,3 +250,75 @@ header{
         padding-top: 1px;
         order: 10; /* Ensure it appears at the very bottom */
     }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-rows: repeat(4 , auto);
+        margin: 45px 150px ;
+        padding-left: 30px;
+        padding-right: 0px;
+        gap:  25px 10px; 
+    }
+    
+    .gallery-title{
+        grid-column: 1 / 4 ;
+    }
+    
+    .gallery-title h1{
+        color: #242565;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .gallery select{
+        /* height: 100%;
+        width: 100%; */
+        /* align-self: center;
+        justify-self: center; */
+        /* border: none;
+        border-radius: 30px; */
+        /* background-color:#F2F4FF; */
+        padding: 5px 10px;
+    }
+    
+    .concert{
+        grid-column: span 2;
+        filter: drop-shadow(0px 18.9529px 47.3822px rgba(119, 115, 170, 0.1));
+        padding-bottom: 22px;
+    
+    }
+    
+    .concert img{
+        width: 100%;
+    }
+    
+    .event-description{
+        display: flex;
+    }
+    
+    .time{
+        padding: 0 20px;
+    }
+    
+    .time h3:first-child{
+        color: blue;
+        font-size: 12px;
+    }
+    
+    .time h3:last-child{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+    .description h2{
+        font-size: 16px;
+        padding-top: 12px;
+    }
+    
+    .description p{
+        font-size: 12px;
+        margin-top: 10px;
+    
+    }
+    
