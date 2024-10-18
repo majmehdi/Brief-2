@@ -1,8 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Baloo Paaji 2", sans-serif;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 header{
     background-image: url(./assets/img/cover1.jpg);
     background-repeat: no-repeat;
@@ -13,120 +19,247 @@ header{
     background-attachment: scroll;
     background-size: cover;
     position: relative;
+    width: 100%;
+
     }
 
-.navbar{
+
+    
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: blueviolet; */
+    }
+    
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar ul li{
+        
+        display: flex;
+        margin-left: -3%;
+        margin-right: -1;
+    }
+    
+    .links{
+        text-decoration: none;
+        color: cadetblue;
+    
+    }
+    
+    .links{
+        text-decoration: none;
+        color: red;
+    
+    }   
+    
+    .navbar ul li a{
+        /* margin-left: 20px; */
+        margin-right: 70px;
+        color: white;
+        
+    }
+    .logo{
+        margin-left: 192px;
+        /* margin-bottom: -10px; */
+        margin-top: 19px;
+        size: 20px;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #555; /* Darker background on hover */
+        border-radius: 5px; /* Rounded corners on hover */
+    }
+    
+    .title{
+        margin-left: 1200px;
+        margin-top: 146px;
+        margin-left: 870px;
+        color: white;
+    }
+    
+    .title_2{
+        margin-left: 1200px;
+        margin-top: 22px;
+        margin-left: 870px;
+        color: white;
+    
+    }
+    
+    .Paragraph_1{
+    
+        margin-left: 1200px;
+        margin-top: 17px;
+        margin-left: 870px;
+        color: white; 
+    }
+    
+    .events{
+    
+        margin-top: 179px;
+        margin-left: 190px;
+        color: darkblue;
+    }
+    /* .image1{
+        margin-top: 100px;
+        margin-left: 190px;
+    } */
+    
+    .txt1{
+    
+        margin-top: 25px;
+        margin-left: 24px;
+    }
+
+    .EventsDesc{
+        display: flex;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        margin-right: 12px;
+    }
+    /* .number14{
+        margin-top: -40px;
+        margin-left: 190px;
+    } */
+    .grp1{
+        margin-top: 12px;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    
+    }
+    
+    .upEvents{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .card .image-box{
+    
+        height: 200px;
+    }
+    .card .image-box img{
+        height: 100%;
+    }
+    
+    .Event{
+        width: 90%;
+        margin-bottom: 164px;
+
+    }
+
+    .jointhebrand{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #EEE1FF;
+        position:relative;
+        width:100%;
+        height:240px;
+        margin-bottom: 8%;
+        
+    }
+    .join{
+        position:relative;
+        top:75px;
+    }
+
+    .blog{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .blogimgs{
+
+        display: flex;
+        align-items: center;
+        gap:20px;
+
+    }
+
+    footer{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 30px 0px 0px 0px;
+        padding-top: 40px;
+        padding-bottom: 170px;
+        background: #0A075F;
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        /* align-items: center; */
+        /* flex-direction: column; */
+        /* list-style-type: none; */
+    }
+
+    .socialmedia{
+        
+        /* margin-left: -300px; */
+        color: white;
+        /* align-items: right; */
+        display: grid;
+        /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+        
+    }
+
+
+
+    .sec-contact{
+        width: 30%;
+        
+    }
+
+    .socialmedia p{
+        width : 480px
+    }
+
+    .sec_quicklinks ul{
+        
+        list-style-type: none;
+    
+
+    }
+    .sec_quicklinks ul a{
+       
+        text-decoration: none;
+        color: white;
+    }
+
+    .sec-aboutus ul{
+        list-style-type: none;
+       
+    }
+    .sec-aboutus ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+ /* footer.lastcontainer{
+
+    width: 100%;
+    display: grid;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* background-color: blueviolet; */
-}
+    flex-direction: column;
+ } */
 
-.navbar ul{
+/* .lastcontainer{
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li{
-    
-    display: flex;
-    margin-left: -3%;
-    margin-right: -1;
-}
-
-.links{
-    text-decoration: none;
-    color: cadetblue;
-
-}
-
-.links{
-    text-decoration: none;
-    color: red;
-
-}   
-
-.navbar ul li a{
-    /* margin-left: 20px; */
-    margin-right: 70px;
-    color: white;
-    
-}
-.logo{
-    margin-left: 192px;
-    /* margin-bottom: -10px; */
-    margin-top: 19px;
-}
-
-.navbar ul li a:hover {
-    background-color: #555; /* Darker background on hover */
-    border-radius: 5px; /* Rounded corners on hover */
-}
-
-.title{
-    margin-left: 1200px;
-    margin-top: 146px;
-    margin-left: 870px;
-    color: white;
-}
-
-.title_2{
-    margin-left: 1200px;
-    margin-top: 22px;
-    margin-left: 870px;
-    color: white;
-
-}
-
-.Paragraph_1{
-
-    margin-left: 1200px;
-    margin-top: 17px;
-    margin-left: 870px;
-    color: white; 
-}
-
-.events{
-
-    margin-top: 179px;
-    margin-left: 190px;
-    color: darkblue;
-}
-/* .image1{
-    margin-top: 100px;
-    margin-left: 190px;
+    width:100%;
+    background: #0A075F;
 } */
-
-.txt1{
-
-    margin-top: 25px;
-    margin-left: 240px;
-}
-
-.number14{
-    margin-top: -40px;
-    margin-left: 190px;
-}
-.grp1{
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-
-}
-
-.upEvents{
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card .image-box{
-
-    height: 200px;
-}
-.card .image-box img{
-    height: 100%;
-}
